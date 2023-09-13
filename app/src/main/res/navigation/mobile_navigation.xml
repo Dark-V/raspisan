@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="ru.schematics.schedule.ui.home.HomeFragment"
+        android:label="@string/menu_main"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="ru.schematics.schedule.ui.gallery.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_placeholder"
+        android:name="ru.schematics.schedule.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_placeholder"
+        tools:layout="@layout/fragment_placeholder" />
+</navigation>
